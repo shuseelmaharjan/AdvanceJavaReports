@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class PreparedStatementExample {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/College";
+    private static final String URL = "jdbc:mysql://localhost:3306/fms";
     private static final String USER = "root";
     private static final String PASSWORD = "";
 
@@ -49,17 +49,17 @@ public class PreparedStatementExample {
     public static void main(String[] args) {
         PreparedStatementExample example = new PreparedStatementExample();
 
-        // Create a new User
+        //create new user
         User newUser = new User();
-        newUser.setUsername("john_doe");
-        newUser.setEmail("john@example.com");
+        newUser.setUsername("shuseel");
+        newUser.setEmail("shuseel@gmail.com");
         newUser.setPassword("password123");
 
-        // Add the user to the database
+        //add user to database
         example.addUser(newUser);
 
-        // Retrieve and print the user from the database
-        User retrievedUser = example.getUser(1); // assuming ID 1 exists in the database
+        //print user from database
+        User retrievedUser = example.getUser(2);
         if (retrievedUser != null) {
             System.out.println("Retrieved User:");
             System.out.println("ID: " + retrievedUser.getId());

@@ -2,7 +2,7 @@ import java.sql.*;
 import java.sql.Statement;
 
 
-public class JdbcExample {
+public class SimpleJdbc {
 
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/fms";
@@ -20,7 +20,9 @@ public class JdbcExample {
             Statement statement = connection.createStatement();
 
             //Execute Insert Query
-            String insertSql = "INSERT INTO users (username, email, password) VALUES ('shuseel maharjan', 'mailtoshuseel@gmail.com', 'shuseel')";
+            String insertSql = "INSERT INTO users " +
+                    "(username, email, password) VALUES " +
+                    "('shuseel', 'mailtoshuseel@gmail.com', 'shuseel')";
             int rowsInserted = statement.executeUpdate(insertSql);
             System.out.println("Rows inserted: " + rowsInserted);
 

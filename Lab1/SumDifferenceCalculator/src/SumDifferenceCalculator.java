@@ -14,7 +14,7 @@ public class SumDifferenceCalculator extends JFrame {
     public SumDifferenceCalculator() {
         // Create the frame
         setTitle("Sum and Difference Calculator");
-        setSize(300, 200);
+        setSize(700, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new GridLayout(4, 2));
 
@@ -64,7 +64,9 @@ public class SumDifferenceCalculator extends JFrame {
             int sum = num1 + num2;
             resultField.setText(String.valueOf(sum));
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Please enter valid integers.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,
+                    "Please enter valid integers.",
+                    "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -75,7 +77,9 @@ public class SumDifferenceCalculator extends JFrame {
             int difference = num1 - num2;
             resultField.setText(String.valueOf(difference));
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Please enter valid integers.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,
+                    "Please enter valid integers.",
+                    "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 

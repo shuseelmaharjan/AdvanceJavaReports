@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExceptionPropagationProject/ExceptionPropagationProject.iml" filepath="$PROJECT_DIR$/ExceptionPropagationProject/ExceptionPropagationProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lab1.iml" filepath="$PROJECT_DIR$/.idea/Lab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SumDifferenceCalculator/SumDifferenceCalculator.iml" filepath="$PROJECT_DIR$/SumDifferenceCalculator/SumDifferenceCalculator.iml" />
+    </modules>
+  </component>
+</project>
